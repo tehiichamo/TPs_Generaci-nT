@@ -1,0 +1,87 @@
+/*básico*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+header, footer {
+  background-color: #4e7397;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+}
+
+.content {
+  flex: 3;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #8b98d18f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+
+/* dispositivos < 768px */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: -1;
+  }
+
+  body {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+/* móviles pequeños < 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  header, footer {
+    padding: 15px 10px;
+  }
+
+  .content, .sidebar {
+    padding: 15px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.3rem;
+  }
+}
