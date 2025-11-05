@@ -1,0 +1,130 @@
+/*Ejercicio 1*/
+.contenedor {
+      display: flex; /*convierte al contenedor en un contenedor flexible*/
+      border: 2px solid #333;
+      padding: 10px;
+      gap: 10px;
+      justify-content: space-around;
+    }
+
+ .ejercicio1 {
+      background-color: #4CAF50;
+      color: rgb(255, 255, 255);
+      padding: 20px;
+      text-align: center;
+      flex: 1; /*esto hace que cada hijo o elemento ocupe el mismo ancho por igual que tiene disponible*/
+    }
+
+    /*Ejercicio 2*/
+.contenedor2{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    border: 2px solid #444;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+.ejercicio2{
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex: auto;
+}
+
+/*Ejercicio 3*/
+.contenedor3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    border: 2px solid #555;
+    padding: 10px;
+}
+
+.ejercicio3{
+    background-color: darkmagenta;
+    color: white;
+    padding: 20px;
+}
+
+.contenedor3_1{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 150px;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #777;
+}
+
+.ejercicio3_1{
+    background-color: #0caa6d;
+    color: white;
+    padding: 20px;
+    flex: 0 0 100px;
+}
+
+/*ejercicio 4*/
+.contenedor4{
+    display: flex;
+    gap: 10px;
+    border: 2px solid #999;
+    padding: 10px;
+}
+
+.contenedor4 .ejercicio4{
+    background-color: #ff4848;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor4 .ejercicio4:nth-child(1) {
+    order: 3;
+    flex: 1 1 100px;
+}
+
+.contenedor4 .ejercicio4:nth-child(2) {
+    order: 1;
+    flex: 2 1 150px;
+    align-self: stretch;
+}
+
+.contenedor4 .ejercicio4:nth-child(3) {
+    order: 2;
+    flex: 1 0 120px;
+}
+
+/*ejercicio 5*/
+.layout{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header, .footer{
+    background-color: #bc57ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.sidebar{
+    background-color: #8d65fa;
+    padding: 20px;
+    flex: 0 0 200px;
+}
+
+.content {
+    background-color: #ddd;
+    flex: 1;
+    padding: 20px;
+}
